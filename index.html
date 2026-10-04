@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <!-- HEADER -->
+        <header>
+
+            <div class="logo">
+                <img src="images/sun.jpg" alt="sunny weather">
+                <h1>Weather Report</h1>
+            </div>
+
+            <div class="top-buttons">
+                <button id="darkmode">🌙</button>
+                <button id="setting">⚙️</button>
+            </div>
+
+        </header>
+
+        <!-- SEARCH -->
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    placeholder="Enter city name..."
+                >
+
+                <button id="search-btn">
+                    🔍
+                </button>
+
+            </div>
+
+            <button id="location-btn">
+                📍 Use My Location
+            </button>
+
+        </section>
+      <p id="msg"></p>
+        <!-- MAIN CARD -->
+        <section class="weather-card">
+
+            <!-- LEFT SIDE -->
+            <div class="left">
+
+                <img
+                    src="images/sun.jpg"
+                    alt="Sunny weather"
+                    id="weather-icon"
+                >
+
+                <h2 id="temp">
+                    
+                </h2>
+
+                <h3 id="condition">
+                    <!-- Sunny -->
+                </h3>
+
+                <p id="feels">
+                    
+                </p>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="right">
+
+                <h2 id="city">
+                   
+                </h2>
+
+                <p id="state">
+                    <!-- Maharashtra, India -->
+                </p>
+
+                <p id="date">
+                    
+                </p>
+
+                <p id="time">
+                    
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- STATS -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h4>Humidity</h4>
+                <p id="humidity"></p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Wind Speed</h4>
+                <p id="wind"></p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Cloud Cover</h4>
+                <p id="cloud"></p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Sun Hours</h4>
+                <p id="sun"></p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Visibility</h4>
+                <p id="visibility"></p>
+            </div>
+
+            <div class="stat-card">
+                <h4>Pressure</h4>
+                <p id="pressure"></p>
+            </div>
+
+        </section>
+
+        <!-- FORECAST -->
+        <section class="forecast">
+
+            <h2>3 Day Forecast</h2>
+
+            <div class="forecast-container">
+
+                <div class="forecast-card">
+                    <h3>Today</h3>
+                    <p id="tem1"></p>
+                    <p id="condition1"></p>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Tomorrow</h3>
+                    <p id="tem2"></p>
+                    <p id="condition2"></p>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Day After</h3>
+                    <p id="tem3"></p>
+                    <p id="condition3"></p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RECENT SEARCH -->
+        <section class="recent-search">
+
+            <h2>Recent Searches</h2>
+
+            <div class="recent-container">
+
+                <button>Mumbai</button>
+                <button>Pune</button>
+                <button>Nashik</button>
+                <button>Nagpur</button>
+
+            </div>
+
+        </section>
+
+    </div>
+    <!-- <p id="msg"></p> -->
+<div id="loader" class="loader"></div>
+</body>
+<script src="script.js"></script>
+</html>
