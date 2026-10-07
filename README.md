@@ -47,6 +47,9 @@ While building this project, I practiced:
 
 ![Weather App](images/sun.jpg)
 
+![Weather App Actual image ](img/weather-app.png)
+
+
 ## 🎯 Future Improvements
 
 I plan to improve this project by adding:
